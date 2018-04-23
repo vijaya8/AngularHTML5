@@ -1,0 +1,22 @@
+div {
+  width: 20em;
+  margin: auto;
+  margin-top: 2em;
+  display: grid;
+
+  input {
+    height: 3em;
+  }
+  .btn_change {
+    height: 3em;
+    margin-top: 2em;
+    text-align: center;
+    button {
+      background: #fb6707;
+      color: white;
+      font-size: 1.5em;
+      font-family: ".SF NS Display";
+      font-weight: initial;
+    }
+  }
+}

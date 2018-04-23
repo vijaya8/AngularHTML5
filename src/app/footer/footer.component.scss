@@ -1,0 +1,31 @@
+footer {
+  margin-top: 3em;
+  padding: 2em;
+  background: #423e3e;
+  height: 6em;
+  width: 95%;
+  color: white;
+  display: flex;
+
+  article {
+    width: 28em;
+    line-height: 1.5em;
+    span {
+      display: grid;
+    }
+  }
+
+  div {
+    p {
+      margin-top: -1em;
+    }
+    img {
+      margin-left: 2em;
+    }
+  }
+
+  aside {
+    margin-left: 6em;
+    display: grid;
+  }
+}

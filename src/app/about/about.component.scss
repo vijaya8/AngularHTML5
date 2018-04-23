@@ -1,0 +1,38 @@
+.text_content {
+  background: url("../../assets/fix_back.jpg");
+  height: 40em;
+  width: 100%;
+
+  article {
+    font-weight: initial;
+    font-family: ".SF NS Display";
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    color: white;
+    text-align: center;
+    padding: 5em 0 0;
+    display: grid;
+
+    .effect {
+      color: black;
+    }
+  }
+  .btn_changes {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    button {
+      background: #fb6707;
+      font-size: 1em;
+      font-family: ".SF NS Display";
+      font-weight: initial;
+      letter-spacing: 0.1em;
+      height: 3em;
+      padding: 1em;
+      margin-top: 2em;
+      margin-left: 2em;
+      border: 1em saddlebrown;
+    }
+  }
+}
