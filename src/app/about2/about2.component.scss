@@ -1,0 +1,35 @@
+section {
+  div {
+    width: 20em;
+    margin: auto;
+    margin-top: 8em;
+    h1 {
+      display: grid;
+      text-align: center;
+    }
+    span {
+      color: #fb6707;
+    }
+  }
+  article {
+    font-family: "Open Sans";
+    font-weight: initial;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    width: 37em;
+    margin: auto;
+    text-align: center;
+  }
+  .icon {
+    width: 70em;
+    margin-top: 3em !important;
+    mat-icon {
+      font-size: 8em;
+      width: 1em;
+      padding: 0.3em;
+    }
+  }
+  .icon_below {
+    display: inline-flex;
+  }
+}
