@@ -24,7 +24,10 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
+    "ilb-portal": "file:../Documents/ILB/portal/dist/ilb-portal-2017.3.0.tgz",
+    "moment": "^2.22.1",
     "rxjs": "^5.5.6",
+    "urlsafe-base64": "^1.0.0",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {

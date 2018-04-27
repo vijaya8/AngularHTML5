@@ -1,0 +1,13 @@
+<section>
+  <div>
+    <mat-card>
+      <mat-card-content>
+        <ul *ngFor="let l of languages | slice:0:10;">
+          <li>{{l.languageName}}</li>
+        </ul>
+
+      </mat-card-content>
+
+    </mat-card>
+  </div>
+</section>

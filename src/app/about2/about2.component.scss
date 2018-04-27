@@ -23,13 +23,17 @@ section {
   .icon {
     width: 70em;
     margin-top: 3em !important;
+    display: flex;
     mat-icon {
       font-size: 8em;
       width: 1em;
       padding: 0.3em;
     }
+    .iconlist {
+      width: 10em;
+      margin: auto;
+
+    }
   }
-  .icon_below {
-    display: inline-flex;
-  }
+
 }

@@ -9,11 +9,7 @@ export class About2Component implements OnInit {
 
   constructor() {
   }
-
-  showResult() {
-    const x = document.forms['myform']['newinput'].value;
-    document.forms['myform']['result'].value = x;
-  }
+  
 
   ngOnInit() {
   }
