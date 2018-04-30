@@ -8,6 +8,9 @@ import {Language, LanguageService} from 'ilb-portal';
 })
 export class LanguagesComponent implements OnInit {
   languages: Language[];
+  dataSource: Language[];
+  displayedColumns = ['image', 'langName', 'spaekers', 'rNeeds'];
+
 
   constructor(private language: LanguageService) {
   }
@@ -15,6 +18,7 @@ export class LanguagesComponent implements OnInit {
   ngOnInit() {
     this.language.getLanguages().subscribe((langResult: Language[]) => {
       this.languages = langResult;
+      this.dataSource = this.languages;
       console.log('this.languages', this.languages);
     });
   }

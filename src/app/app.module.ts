@@ -13,6 +13,7 @@ import {FormsModule} from '@angular/forms';
 import {About2Component} from './about2/about2.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
 import {Home1Component} from './home1/home1.component';
 import {
   AuthenticationStorageService,
@@ -66,6 +67,7 @@ const routes: Routes = [
     MatIconModule,
     HttpClientModule,
     MatCardModule,
+    MatTableModule,
     RouterModule.forRoot(routes)
   ],
   providers: [

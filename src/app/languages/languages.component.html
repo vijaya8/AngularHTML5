@@ -1,13 +1,50 @@
-<section>
-  <div>
-    <mat-card>
-      <mat-card-content>
-        <ul *ngFor="let l of languages | slice:0:10;">
-          <li>{{l.languageName}}</li>
-        </ul>
+<!--<section>-->
+<!--<div>-->
+<!--<mat-card>-->
+<!--<mat-card-content>-->
+<!--<ul *ngFor="let l of languages | slice:0:10;">-->
+<!--<li>{{l.languageName}}</li>-->
+<!--</ul>-->
 
-      </mat-card-content>
+<!--</mat-card-content>-->
 
-    </mat-card>
-  </div>
-</section>
+<!--</mat-card>-->
+<!--</div>-->
+<!--</section>-->
+
+<div class="example-container mat-elevation-z8">
+  <mat-table #table [dataSource]="dataSource|slice:0:6">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <ng-container matColumnDef="image">
+      <mat-header-cell *matHeaderCellDef></mat-header-cell>
+      <mat-cell class="change" *matCellDef="let Language"><img src="{{Language.cardImage}}"></mat-cell>
+    </ng-container>
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="langName">
+      <mat-header-cell *matHeaderCellDef>Details</mat-header-cell>
+      <mat-cell *matCellDef="let Language">{{Language.languageName}},<br/>
+        {{Language.continent}},
+        {{Language.country}}
+      </mat-cell>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="spaekers">
+      <mat-header-cell *matHeaderCellDef>IMPACT</mat-header-cell>
+      <mat-cell *matCellDef="let Language">{{Language.populationRange}},<br/>Speakers</mat-cell>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="rNeeds">
+      <mat-header-cell *matHeaderCellDef>REMAINING NEEDS</mat-header-cell>
+      <mat-cell *matCellDef="let Language">{{Language.weight}}</mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>
